@@ -49,7 +49,7 @@ int calculateDistance(){
   digitalWrite(trigPin, HIGH); 
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
-  duration = pulseIn(echoPin, HIGH); // Lee el echo Pin, devuelve el tiempo de viaje de la onda de sonido en microsegundos
+  duration = pulseIn(echoPin, HIGH); // Lee el echoPin, devuelve el tiempo de viaje de la onda de sonido en microsegundos
   distance= duration*0.034/2;
   return distance;
 }
